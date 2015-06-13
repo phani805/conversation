@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 13px;
+	font-family: arial;
+}
+#conversation	{
+	background-color: #EDEDED;
+	 border-radius: 4px;
+	 width:600px;
+	 overflow: hidden;
+	 margin: auto;
+	 padding: 12px ;
+	 margin-top:40px; 
+
+}
+
+.btn{
+	padding: 8px 20px;
+	background: #F4F4F4;
+	color: black;
+	text-decoration: none;
+	float: left;
+	border: 1px solid #DDDDDD;
+}
+
+#buttons-container {
+	width: 100%;
+}
+
+#buttons-container .btn:first-child:not(:last-child) {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+#buttons-container .btn:last-child:not(:first-child) {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.active {
+	border-left : 0;
+	border-right: 0; 
+	background: #dfdede;
+	-moz-box-shadow:    inset 0 0 12px #AAAAAA;
+   	-webkit-box-shadow: inset 0 0 12px #AAAAAA;
+	box-shadow:         inset 0 0 12px #AAAAAA;
+}
+
+#conversation-box {
+	width:100%;
+	margin-top :12px;
+	border-radius: 4px; 
+	padding: 12px;
+}
+
+.converions-icons {
+	font-size:18px;
+	padding: 0px 8px;
+	overflow: hidden;
+	margin-bottom: 12px; 
+}
+
+.converions-icons  .icons{
+	margin: 4px 18px;
+}
+
+.pull-right {
+	float: :right;
+}
+
+.post {
+	margin-top :14px;
+	font-size: 13px; 
+}
+
+.comments{
+	background: #FFFFFF;
+	width:100%;
+	padding: 8px;  
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+.img-container{
+	background-color: #FFFFFF;
+	padding :4px;
+	border: 1px solid #CCCCCC;
+	width : 65px;
+	margin-top : 6px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.comment-img {
+	width: 100%;
+	height: auto;
+
+}
+ 
+.comment-right {
+	margin-left: 8px; 
+	width: 86%;
+}
+
+.right-div > h4 {
+	display: inline-block;
+	margin: 0px;
+}
+.right-div {
+	width: 100%
+}
+
+.pull-left {
+	float: left
+}
+
+.time-left {
+	font-style: italic;
+	color : #c5c5c5;
+	float: right;
+	font-size: 10px;
+}
+
+.comment-right   p{
+	font-size: 12px;	
+	color: #5d5d5d;
+}
+ 
+.comment-right   hr{
+	  border: none;	
+	  border-top: 1px solid #E3E3E3;
+
+}
+
+.add-text-container {
+	overflow: hidden;
+	color: #9b9b9b;
+	font-size: 12px;
+}
+
+.add-text {
+	margin-right: 8px;
+}
+
+.img-container-small {
+	width : 50px;
+}
+
+.last-comment {
+
+	border-width: 0  0 0 15px ;
+	border-style: solid;
+	-webkit-border-image: 
+      -webkit-gradient(left top, left bottom, color-stop(0%, #fefefe), color-stop(7%, #dbdbdb), color-stop(58%, #d1d1d1), color-stop(100%, #e2e2e2)) 1 100%;
+	-webkit-border-image: 
+	 -webkit-linear-gradient(top, #fefefe 0%, #dbdbdb 7%, #d1d1d1 58%, #e2e2e2 100%) 1 100%;
+	 -moz-border-image:
+	 -moz-linear-gradient(top, #fefefe 0%, #dbdbdb 7%, #d1d1d1 58%, #e2e2e2 100%) 1 100%;
+	  -o-border-image:
+	     -o-linear-gradient(-45deg, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%) 1 100%;
+	  border-image:
+	    linear-gradient(45deg, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%) 50 round;
+}
+
+.imp-comment {
+	position: relative;
+
+	
+}
+
+.imp {
+	width : 23px;
+	height: 23px;
+	border-radius: 23px;
+	background-color: #ff920a; 
+	border: 2px white solid;
+	color: white;
+	position: absolute;
+	top : -10px;
+	left : -10px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.fold {
+	position: absolute;
+	top : 0px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 38px solid #eee;
+  	border-right:  45px solid #FFFFFF; 
+  	box-shadow: -8px 8px 8px  #CCCCCC; 
+}
+
+.close{
+	width : 18px;
+	height: 18px;
+	border-radius: 20px;
+	background-color: #b4221f; 
+	color: white;
+	position: absolute;
+	top : 3px;
+	right:  4px;
+	z-index: 10;
+	font-size: 10px;
+	text-align: center;
+	line-height: 18px;
+}
